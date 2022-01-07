@@ -1,10 +1,13 @@
 
 #include <stdio.h>
+
 //function declarations
 unsigned long fibo(unsigned long n);
+
 int main(){
   unsigned long n, f;
-  
+    unsigned long n, f;
+
   //input
   printf("Enter an integer: ");
   scanf("%lu", &n);
@@ -12,6 +15,7 @@ int main(){
   //prints result of integer
   f = fibo(n);
   printf("Fibonacci Number F(%lu) = %lu\n",n,f);
+
   //input
   printf("Enter a second integer: ");
   scanf("%lu", &n); //stores input  
@@ -19,6 +23,7 @@ int main(){
   //prints result of second integer
   f = fibo(n);
   printf("Fibonacci Number F(%lu) = %lu\n",n,f);
+
   //gets previous by subtracting n, recursively
   n=n-1; //doesnt recount n
   printf("Preceding Fibonacci Numbers:\n");
@@ -27,6 +32,7 @@ int main(){
   printf("%lu ", f);
   }
 }
+
 unsigned long fibo(unsigned long n){
   unsigned long i, a, b, f;
   if(n < 2)
